@@ -1,0 +1,42 @@
+name: StrayMoney
+version: '1.0'
+main: org.strayzii.strayMoney.StrayMoney
+api-version: '1.21'
+author: StrayZii
+description: Simple economy plugin
+softdepend: [PlaceholderAPI]
+
+commands:
+  straymoney:
+    usage: /straymoney <reload | give | set | take>
+    description: "Allows use of /straymoney (reload, give, set, take)"
+  straypay:
+    aliases: ["pay"]
+    usage: /pay <player> <amount>
+    description: "The pay command."
+  straybalance:
+    aliases: ["balance"]
+    usage: /balance [player]
+    description: "This command allows you to see your balance"
+
+permissions:
+  straymoney.*:
+    description: "Gives all the permissions."
+    default: op
+    children:
+      straymoney.admin: true
+      straymoney.pay: true
+      straymoney.balance: true
+      straymoney.balance.others: true
+  straymoney.admin:
+    default: op
+    description: "Allows use of /straymoney (reload, give, set, take)."
+  straymoney.pay:
+    default: true
+    description: "Allows you to pay other players."
+  straymoney.balance:
+    default: true
+    description: "Allows you to check your balance."
+  straymoney.balance.others:
+    default: op
+    description: "Allows you to see player's balance."

@@ -1,0 +1,37 @@
+max-pay-amount: 10000
+
+max-balance: 100000000
+
+messages:
+  prefix: "<#4498DB>sᴛʀᴀʏsᴍᴘ <dark_gray>»<reset>"
+
+  no-permission: '$prefix <#B5C4E0>У вас нет прав для использования этой команды.'
+  player-only: '$prefix <#B5C4E0>Эту команду можно использовать только в игре.'
+  player-not-found: '$prefix <#B5C4E0>Игрок не найден.'
+  invalid-number: '$prefix <#B5C4E0>Укажите корректное число.'
+  need-positive-amount: '$prefix <#B5C4E0>Сумма должна быть положительным числом.'
+
+  usage-admin: '$prefix <#B5C4E0>Использование: <#4498DB>/straymoney \<reload | give | set | take>'
+  usage-pay: '$prefix <#B5C4E0>Использование: <#4498DB>/pay \<игрок> \<сумма>'
+  usage-balance: '$prefix <#B5C4E0>Использование: <#4498DB>/balance [игрок]'
+
+  reload: '$prefix <#B5C4E0>Конфигурация перезагружена.'
+
+  cant-pay-yourself: '$prefix <#B5C4E0>Вы не можете перевести деньги самому себе.'
+  not-enough-money: '$prefix <#B5C4E0>Недостаточно средств.'
+  pay-limit: '$prefix <#B5C4E0>Максимальная сумма перевода: <#4498DB>$limit<#B5C4E0>.'
+  balance-limit: '$prefix <#B5C4E0>Превышен максимальный баланс: <#4498DB>$limit<#B5C4E0>.'
+  pay-payer: '$prefix <#B5C4E0>Вы перевели <#4498DB>$money <#B5C4E0>игроку <#4498DB>$player<#B5C4E0>.'
+  pay-receiver: '$prefix <#B5C4E0>Игрок <#4498DB>$player <#B5C4E0>перевёл вам <#4498DB>$money<#B5C4E0>.'
+  fail-pay: '$prefix <#B5C4E0>Не удалось выполнить перевод. Попробуйте позже.'
+
+  balance-self: '$prefix <#B5C4E0>Ваш баланс: <#4498DB>$balance<#B5C4E0>.'
+  balance-others: '$prefix <#B5C4E0>Баланс игрока <#4498DB>$player<#B5C4E0>: <#4498DB>$balance<#B5C4E0>.'
+  fail-balance: '$prefix <#B5C4E0>Не удалось получить баланс. Попробуйте позже.'
+
+  success-give: '$prefix <#B5C4E0>Деньги успешно выданы.'
+  fail-give: '$prefix <#B5C4E0>Не удалось выдать деньги. Подробности в консоли.'
+  success-take: '$prefix <#B5C4E0>Деньги успешно списаны.'
+  fail-take: '$prefix <#B5C4E0>Не удалось списать деньги. Подробности в консоли.'
+  success-set: '$prefix <#B5C4E0>Баланс успешно установлен.'
+  fail-set: '$prefix <#B5C4E0>Не удалось установить баланс. Подробности в консоли.'
